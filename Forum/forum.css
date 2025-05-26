@@ -1,0 +1,135 @@
+/* Temel Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel Stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Stili */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Stili */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Stili */
+.navbar .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navbar Linkleri */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Navbar Öğeleri */
+.navbar .nav-links li {
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Linkler */
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Efekti */
+.navbar .nav-links li a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+/* Hover Efekti */
+.navbar .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+/* Mobilde navbar'ı gizle */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+}
+
+/* Main İçeriği */
+main {
+    padding: 2rem;
+}
+
+/* Section Stili */
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablo Stili */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Button Stili */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Input ve Select Stili */
+input[type="text"], input[type="number"], input[type="file"], select {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}

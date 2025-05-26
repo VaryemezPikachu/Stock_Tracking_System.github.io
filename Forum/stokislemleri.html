@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVENIX</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+<header>
+    <h1>Stok İşlemleri</h1>
+</header>
+<main>
+    <section id="stok-giris">
+        <h2>Stok Girişi</h2>
+        <input type="text" id="urun-kodu-giris" placeholder="Ürün Kodu">
+        <input type="number" id="miktar-giris" placeholder="Miktar">
+        <button id="giris-yap">Giriş Yap</button>
+    </section>
+    <section id="stok-cikis">
+        <h2>Stok Çıkışı</h2>
+        <input type="text" id="urun-kodu-cikis" placeholder="Ürün Kodu">
+        <input type="number" id="miktar-cikis" placeholder="Miktar">
+        <button id="cikis-yap">Çıkış Yap</button>
+    </section>
+    <section id="stok-listesi">
+        <h2>Stok Listesi</h2>
+        <table id="stok-tablosu">
+            <thead>
+            <tr>
+                <th>Ürün Kodu</th>
+                <th>Miktar</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

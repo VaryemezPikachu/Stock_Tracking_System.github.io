@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVENIX</title>
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+<navbar>
+    <div class="logo">
+        <img src="../IMG/logo.png" width="40%" height="40%">
+    </div>
+    <ul class="nav-links">
+        <li><a href="depolistesi.html">DEPODAKİLER</a></li>
+        <li><a href="raporlar.html">RAPORLAR</a></li>
+        <li><a href="stokislemleri.html">STOK İŞLEMLERİ</a></li>
+        <li><a href="siparislistesi.html">SİPARİŞ EDİLENLER</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="forum.html">Forum</a></li>
+
+    </ul>
+</navbar>
+<main>
+    <section id="profil-bilgileri">
+        <h2>Profil Bilgileri</h2>
+        <p>Kullanıcı Adı: <span id="kullanici-adi"></span></p>
+        <p>Yetki: <span id="yetki"></span></p>
+        <p>E-posta: <span id="kullanici-eposta"></span></p>
+    </section>
+    <section id="kullanici-ayarlari">
+        <p>Şifre Değiştir: <button id="sifre-degistir">Değiştir</button></p>
+        <p>Profil Fotoğrafı: <input type="file" id="profil-fotografi"></p>
+    </section>
+    <section id="sistem-ayarlari">
+        <h2>Sistem Ayarları</h2>
+        <p>Tema: <select id="tema"><option value="light">Açık</option><option value="dark">Koyu</option></select></p>
+    </section>
+    <section id="genel-bilgiler">
+        <h2>Genel Bilgiler</h2>
+        <p>Toplam Ürün: <span id="toplam-urun"></span></p>
+        <p>Toplam Depo: <span id="toplam-depo"></span></p>
+        <p>Toplam Sipariş: <span id="toplam-siparis"></span></p>
+    </section>
+    <section id="bildirimler">
+        <h2>Bildirimler</h2>
+        <ul id="bildirim-listesi">
+        </ul>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
